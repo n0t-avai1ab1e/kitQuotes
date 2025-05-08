@@ -26574,5 +26574,37 @@
       "leadership",
       "harmony"
     ]
+  },
+  {
+    "id": 9003,
+    "quote": "Nothing rests; everything moves; everything vibrates.",
+    "author": "Unknown",
+    "length": 53,
+    "tags": [
+      "life",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 9004,
+    "quote": "Crime is common. Logic is rare.",
+    "author": "Arthur Conan Doyle",
+    "length": 31,
+    "tags": [
+      "motivation",
+      "knowledge",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 9005,
+    "quote": "Keep something beautiful in your Heart to survive difficult times.",
+    "author": "Paulo Coelho",
+    "length": 66,
+    "tags": [
+      "love",
+      "happiness",
+      "resilience"
+    ]
   }
 ]
