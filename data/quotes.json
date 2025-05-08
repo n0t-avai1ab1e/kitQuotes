@@ -27,15 +27,6 @@
     ]
   },
   {
-    "id": 4,
-    "quote": "I can, therefore I am.",
-    "author": "Simone Weil",
-    "length": 22,
-    "tags": [
-      "wisdom"
-    ]
-  },
-  {
     "id": 5,
     "quote": "Joy is the best makeup.",
     "author": "Anne Lamott",
@@ -26549,6 +26540,39 @@
       "motivation",
       "inspiration",
       "success"
+    ]
+  },
+  {
+    "id": 9000,
+    "quote": "The Psychology of old ideals must pass.",
+    "author": "Charles Haanel",
+    "length": 39,
+    "tags": [
+      "wisdom",
+      "inspiration",
+      "mindfulness"
+    ]
+  },
+  {
+    "id": 9001,
+    "quote": "Angry people are not always Wise.",
+    "author": "Jane Austen",
+    "length": 33,
+    "tags": [
+      "wisdom",
+      "anger",
+      "harmony"
+    ]
+  },
+  {
+    "id": 9002,
+    "quote": "To acquire love... fill yourself up with it until you become a magnet.",
+    "author": "Jane Austen",
+    "length": 70,
+    "tags": [
+      "love",
+      "leadership",
+      "harmony"
     ]
   }
 ]
