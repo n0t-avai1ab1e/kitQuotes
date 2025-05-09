@@ -1,27 +1,25 @@
-<h1 align="center">QuoteSlate API</h1>
+<h1 align="center">kitQuotes API</h1>
 
 <div align="center">
 
-![QuoteSlate API](https://img.shields.io/badge/API-QuoteSlate-blue)
-![API Status](https://img.shields.io/website?url=https%3A%2F%2Fquoteslate.vercel.app%2Fapi%2Fquotes%2Frandom&label=API%20Status)
+![kitQuotes API](https://img.shields.io/badge/API-kitQuotes-blue)
+![API Status](https://img.shields.io/website?url=https%3A%2F%2Fkitquotes.vercel.app%2Fapi%2Fquotes%2Frandom&label=API%20Status)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Rate Limit](https://img.shields.io/badge/rate%20limit-100%20req%2F15min-yellow)
 
 A robust, developer-friendly API for serving inspirational and thought-provoking quotes with powerful filtering capabilities.
 
-[Explore the API](https://quoteslate.vercel.app) | [Documentation](https://github.com/Musheer360/QuoteSlate#api-reference) | [Deploy Your Own](https://github.com/Musheer360/QuoteSlate#deploying-on-vercel-easiest-for-high-volume-needs)
+[Explore the API](https://kitquotes.vercel.app) | [Documentation](#api-reference) | [Deploy Your Own](#deploying-on-vercel-easiest-for-high-volume-needs)
 
 </div>
 
 ## 📚 Table of Contents
 
 - [Overview](#overview)
-- [Using QuoteSlate Responsibly](#using-quoteslate-responsibly)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Quick Start](#quick-start-example)
   - [Deploying on Vercel (Easiest for High-Volume Needs)](#deploying-on-vercel-easiest-for-high-volume-needs)
-  - [Running Locally](#running-locally)
 - [API Reference](#api-reference)
   - [Endpoints](#endpoints)
   - [Parameters](#parameters)
@@ -31,40 +29,13 @@ A robust, developer-friendly API for serving inspirational and thought-provoking
 - [Rate Limiting](#rate-limiting)
 - [Technical Details](#technical-details)
 - [Contributing](#contributing)
-- [Projects Using QuoteSlate](#projects-using-quoteslate)
 - [License](#license)
 
 ## Overview
 
-QuoteSlate API is a lightweight, high-performance API that provides access to a curated collection of inspirational quotes. Built as an open-source RESTful service, it offers flexible filtering options, making it perfect for applications ranging from personal development apps to educational platforms.
+kitQuotes API is a lightweight, high-performance API that provides access to a curated collection of inspirational quotes. Built as an open-source RESTful service, it offers flexible filtering options, making it perfect for applications ranging from personal development apps to educational platforms.
 
-**Base URL:** `https://quoteslate.vercel.app`
-
-## Using QuoteSlate Responsibly
-
-The QuoteSlate API is a labor of love, provided free of charge to support the developer community. My goal is to keep it open and accessible to everyone, especially for hobby projects and creative applications. It's currently hosted on Vercel's free plan, which generously provides resources for small-scale projects. However, to ensure its long-term sustainability for everyone, I ask for your cooperation in using the API responsibly.
-
-**Here's how you can help:**
-
-1. **Optimize Your Requests and Cache Quotes:** Please make use of the `count` parameter to fetch multiple quotes (up to 50) in a single request whenever possible. This significantly reduces the load on the server. **Furthermore, cache the quotes you fetch locally in your application.** For example, if your app displays 5 quotes per day, fetching and caching 50 quotes means you'll have enough for 10 days without needing to make another API call. This not only reduces server load but also makes your app more resilient – if the API experiences downtime, your app can continue functioning using the cached quotes as long as the cache is intact.
-    
-2. **Commercial or Public Use? Deploy Your Own:** I understand the temptation to use the default endpoint (`quoteslate.vercel.app`) – it's definitely the easiest option. However, this endpoint is designed for hobbyists creating projects primarily for their own use or very small-scale applications. **If your project is commercial, intended for public use, or will generate a significant number of API calls, it is crucial that you fork this repository and deploy your own instance on Vercel.**  It's easy and free for most use cases! This gives you dedicated resources, ensures you won't be impacted by rate limits, and helps keep the public endpoint sustainable for everyone. **For very high-volume applications, you can even create multiple deployments on Vercel and implement load balancing on your app's end to distribute requests across them.** Think of QuoteSlate as _our_ project, not just mine. If you are building something that requires a lot of requests, take ownership and deploy your instance. If usage continues to grow as it has been, I may need to upgrade to Vercel's paid Pro plan in the future, which is a significant cost for me as a student. Deploying your own instance, when needed, is the most responsible and sustainable way to use the API for high-volume projects. Detailed instructions are in the [Deploying on Vercel](#deploying-on-vercel-easiest-for-high-volume-needs) section.
-    
-3. **Give Credit Where It's Due:** I don't ask for payment, but proper attribution is essential. If you use the QuoteSlate API in your project, please include a brief acknowledgment, such as:
-    
-    > "Quotes powered by the [QuoteSlate API](https://github.com/Musheer360/QuoteSlate)"
-    >
-    > "This project uses the QuoteSlate API, a free and open-source quote API. Check it out [here](https://github.com/Musheer360/QuoteSlate)"
-    
-4. **Show Your Support:** A simple star on this GitHub repository goes a long way in helping others discover the project and growing the community.
-
-**Why This Matters:**
-
-By following these guidelines, you help me keep the QuoteSlate API free and available for everyone. While Vercel's free plan is currently sufficient, a large number of individual requests puts a strain on those resources. If usage patterns don't change, I might have to upgrade to a paid plan, which would be a financial burden.
-
-**Thank You:**
-
-I appreciate your understanding and cooperation in making the QuoteSlate API a valuable resource for the entire community. Your responsible usage and support are what make this project possible!
+**Base URL:** `https://kitquotes.vercel.app`
 
 ## Features
 
@@ -94,7 +65,7 @@ No API key is required. Simply make HTTP requests to the endpoints using your pr
 
 ```javascript
 // Fetch a random quote
-fetch('https://quoteslate.vercel.app/api/quotes/random')
+fetch('https://kitQuotes.vercel.app/api/quotes/random')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
@@ -109,69 +80,17 @@ If your project is commercial, intended for public use, or requires a large numb
     
 3. **Create a New Project:** Click the "New Project" button.
     
-4. **Import Your Forked Repository:** In the "Import Git Repository" section, select your forked QuoteSlate repository from the list.
+4. **Import Your Forked Repository:** In the "Import Git Repository" section, select your forked kitQuotes/QuoteSlate repository from the list.
     
 5. **Configure the Project (Optional):** You can usually keep the default settings. Vercel will automatically detect that it's a Node.js project.
     
 6. **Deploy!** Click the "Deploy" button. Vercel will build and deploy your API.
     
-7. **Your Own Endpoint:** Once deployed, you'll be given a unique URL (an endpoint) for your own instance of the QuoteSlate API. Use this URL in your application instead of `quoteslate.vercel.app`.
+7. **Your Own Endpoint:** Once deployed, you'll be given a unique URL (an endpoint) for your own instance of the kitQuotes/QuoteSlate API. Use this URL in your application instead of `kitquotes.vercel.app`.
     
 8. **(Optional) Multiple Deployments for Very High Volume:** If your project has extremely high request needs, you can create multiple deployments on Vercel by repeating steps 3-7 with different project names, each creating its own unique URL. Then implement load balancing on your app's end to distribute requests across these endpoints.
 
 **It's that simple!** Vercel handles all the complexity of hosting and scaling for you. You get your own dedicated resources and won't have to worry about rate limits on the public endpoint. For detailed instructions, refer to [Vercel's documentation](https://vercel.com/docs).
-
-### Running Locally
-
-Follow these steps to run the API on your local machine:
-
-1. **Prerequisites**
-    
-    -   Node.js (v14 or higher)
-    -   npm (Node Package Manager)
-    
-2. **Clone the Repository**
-    
-    ```bash
-    git clone https://github.com/Musheer360/QuoteSlate.git
-    cd QuoteSlate
-    ```
-    
-3. **Install Dependencies**
-    
-    ```bash
-    npm install
-    ```
-    
-4. **Required Files**
-    
-    Ensure you have the following JSON files in your root directory:
-    
-    -   `quotes.json` - Contains the quotes data
-    -   `authors.json` - Contains author names and their quote counts
-    -   `tags.json` - Contains available tags
-    
-5. **Start the Server**
-    
-    ```bash
-    npm start
-    ```
-    
-    The API will be available at `http://localhost:3000`
-    
-6. **Development Mode**
-    
-    For development with auto-reload:
-    
-    ```bash
-    npm run dev
-    ```
-
-7. **Testing the Installation**
-
-    ```bash
-    curl http://localhost:3000/api/quotes/random
-    ```
 
 #### Data File Formats
 
